@@ -1,5 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Olá mundo!");
+        Payment paymentCardCredit = new PaymentCardCredit("1234567890123456", "John Doe", "01/23", "123");
+        ProcessPayment processPaymentCredit = new ProcessPayment(paymentCardCredit);
+
+        processPaymentCredit.makePayment(500.0);
     }
 }

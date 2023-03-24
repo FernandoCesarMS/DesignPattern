@@ -1,0 +1,15 @@
+package payment;
+
+public class PaymentBillet implements Payment {
+  private String billetNumber;
+  private String expirationDate;
+
+  public PaymentBillet (String billetNumber, String expirationDate) {
+    this.billetNumber = billetNumber;
+    this.expirationDate = expirationDate;
+  }
+
+  public void makePayment(double value) {
+    System.out.println("O boleto" + billetNumber + "foi pago! Valor total: " + value);
+  }
+}

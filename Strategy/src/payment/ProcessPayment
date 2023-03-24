@@ -1,0 +1,13 @@
+package payment;
+
+public class ProcessPayment {
+  private Payment payment;
+  
+  public ProcessPayment (Payment payment) {
+    this.payment = payment;
+  }
+
+  public void makePayment(double value) {
+    payment.makePayment(value);
+  }
+}

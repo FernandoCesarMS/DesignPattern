@@ -1,0 +1,11 @@
+package payment;
+
+public class PaymentPix implements Payment {
+  
+  public PaymentPix () {
+  }
+
+  public void makePayment(double value) {
+    System.out.println("Pix pago no valor de " + value);
+  }
+}

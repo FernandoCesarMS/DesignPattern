@@ -1,0 +1,22 @@
+package payment;
+
+public class PaymentCardCredit implements Payment {
+
+    private String cardNumber;
+    private String cardholderName;
+    private String expirationDate;
+    private String cvv;
+
+    public PaymentCardCredit(String cardNumber, String cardholderName, String expirationDate, String cvv) {
+        this.cardNumber = cardNumber;
+        this.cardholderName = cardholderName;
+        this.expirationDate = expirationDate;
+        this.cvv = cvv;
+    }
+  
+  public void makePayment(double value) {
+    System.out.println("Foi realizado um pagamento no valor " + value + "! O valor será creditado do seu saldo em breve");
+  }
+
+}
+
